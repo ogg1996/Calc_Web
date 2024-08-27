@@ -1,0 +1,121 @@
+.flex{
+  display: flex;
+}
+
+/* 공용 */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body{  
+  height: 100%;
+}
+body{
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  border: 2px solid black;
+  border-bottom: 5px groove black;
+  border-radius: 10px;
+
+  width: 340px;
+  height: 550px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #eeeeee;
+}
+
+/* circle */
+.circles{
+  margin-top: 10px;
+  margin-left: 19px;
+
+  align-self: flex-start;
+  gap: 10px;
+}
+.circles span{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#red{
+  background-color: red;
+}
+#blue{
+  background-color: blue;
+}
+#green{
+  background-color: green;
+}
+
+/* display */
+.display{
+  border: 3px solid black;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+
+  padding: 0 15px;
+
+  width: 300px;
+  height: 100px;
+
+  align-items: center;
+}
+.display input{
+  border: none;
+  background-color: white;
+  width: 100%;
+
+  font-size: 50px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* button */
+.btns{
+  padding-bottom: 10px;
+  width: 300px;
+  gap: 6px;
+
+  flex-direction: column;
+  flex: 1 0 0;
+}
+
+.btns-rows{
+  gap: 5px;
+  flex: 1 0 0;
+}
+
+.button{
+  padding: 0;
+  
+  border-radius: 10px;
+  border: 2px solid black;
+  border-bottom: 5px groove black;
+  
+  background-color: #eeeeee;
+  
+  font-size: 20px;
+  font-weight: 600;
+
+  flex: 1 0 0;
+}
+.zero{
+  flex: 2 0 0;
+  padding: 0 4.5px;
+}
+
+.button:hover{
+  background-color: #aaaaaa;
+  color: white;
+}
+.button:active{
+  background-color: #aaaaaa;
+  border-bottom: 2px solid black;
+}
