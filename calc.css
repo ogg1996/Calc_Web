@@ -74,15 +74,22 @@ body{
   height: 30px;
   border-bottom: 1px solid gray;
 
-  font-size: 20px;
-  text-align: right;
+  justify-content: right;
+  align-items: center;
+}
+#display1 span{
+  font-size: 25px;
 }
 #display2{
   width: 100%;
   flex-grow: 1;
+
+  justify-content: right;
+  align-items: center;
+}
+#display2 span{
   font-size: 40px;
   font-weight: 700;
-  text-align: right;
 }
 
 /* button */
