@@ -73,7 +73,6 @@ numberBtn.forEach((numBtn) => {
       // 연산이 처음이 아니라면..
       // 연산결과를 지우고 새로입력할때
       if(operator.result !== 0){
-        display1.textContent = ''
         display2.textContent = ''
         operator.result = 0
       }
