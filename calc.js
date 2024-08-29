@@ -59,6 +59,15 @@ function changeDisplay2FontSize(){
   }
 }
 
+function clearAll(){
+  display1.textContent = ''
+  display2.textContent = '0'
+  operator.reset()
+  operator.oper = ''
+  operator.result = 0
+  changeDisplay2FontSize()
+}
+
 // nember, '.' addEventListener
 numberBtn.forEach((numBtn) => {
   numBtn.addEventListener('click', () =>{
@@ -130,7 +139,10 @@ equalBtn.addEventListener('click', () => {
     operator.right = Number(display2.textContent)
     display2.textContent = '0'
   }
-  if(operator.left === 0 || operator.right === 0) return
+  if(operator.left === 0 || operator.right === 0) {
+    clearAll()
+    return
+  }
   
   operator.equal()
   operator.oper = ''
@@ -141,12 +153,7 @@ equalBtn.addEventListener('click', () => {
 functionBtn.forEach((funcBtn) => {
   funcBtn.addEventListener('click', () =>{
     if(funcBtn.textContent === 'C'){
-      display1.textContent = ''
-      display2.textContent = '0'
-      operator.reset()
-      operator.oper = ''
-      operator.result = 0
-      changeDisplay2FontSize()
+      clearAll()
     }
   })
 })
